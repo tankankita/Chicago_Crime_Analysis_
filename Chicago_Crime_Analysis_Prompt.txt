@@ -1,0 +1,33 @@
+﻿Chicago Crime Analysis
+The assignment is to input Chicago Crime data and perform a simple analysis of the top - 5 crimes.  There are 2 input files, both in CSV format: 
+(1) “crime-codes.csv” defines a standard set of crime codes,
+(2) “crimes.csv” contains the crimes reported in Chicago. 
+The  job is to write a modern C++ program to input this data, organize it into a collection of objects, and compute the top - 5 crimes using modern C++ techniques.
+
+
+The input files are text files in CSV format — i.e. comma - separated values. The file “crime-codes.csv”defines a standard set of crime codes along with human - readable descriptions.  The format is as follows:
+IUCR,PRIMARY_DESCRIPTION,SECONDARY_DESCRIPTION
+1025,ARSON,AGGRAVATED
+1090,ARSON,ATT
+EMPT ARSON
+1010,ARSON,BY EXPLOSIVE
+.
+.
+.
+The first line contains column headers, and should be ignored.  The data starts on line 2, and each data line contains 3 values:  an
+IUCR (Illinois Uniform Crime Reporting) code, a primary description of that code, along with a Secondary description.  For example, crime code “1025” denotes the crime of “Arson”, in particular “Aggravated Arson”.  Note that the IUCR crime code is a 4 - character string, not an integer code as you might expect; if you scroll through the file, you’ll see crime codes along the lines of 
+“ 041B ” and “501H”. The file is ordered by primary and secondary description ; the size of the file is unknown and may change. The second input file “crimes.csv” contains info about crimes reported in Chicago .  The format is as
+Follows:
+DateTime,IUCR,Arrest,Domestic,Beat,District,Ward,Community,Year
+1/1/2013 0:00,2826,FALSE,FALSE,2211,22,19,74,2013
+1/1/2013 0:00,1754,FALSE,FALSE,1414,14,35,22,2013
+1/1/2013 0:00,2825,FALSE,TRUE,2512,25,29,19,2013
+.
+.
+.
+The first line contains column headers, and should be ignored.  The data starts on line 2, and each data line contains 9 values:  the data & time the crime occurred (string), the IUCR crime code (string), whether an arrest was made (TRUE or FALSE), whether the crime represents domestic violence (TRUE or FALSE), where the crime occurred — the police beat , the city district , the voting ward , and Chicago community — and finally, the year. 
+The file is ordered by date & time; the size of the file is unknown and may change. The input files are available on the course web page under “Homeworks”, then “ hw01- files ”.  Three files are being made available for each platform (Linux, Mac, and PC): crime- codes.csv crimes.csv crimes 2.csv The first 2 files
+— “crime - codes.csv” and “crimes.csv”
+— were used to produce the screenshot shown on page
+1.  The “crimes -
+2.csv” file is a larger version covering the 2001 - 2015 time period; this is being made available to test the efficiency of your approach on a larger dataset.  All three files are text files and can be opened in a text editor (e.g. Notepad) or a spreadsheet program (e.g. Excel)
